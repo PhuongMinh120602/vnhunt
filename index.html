@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+        margin: 0;
+        padding; 0;
+      }
+
+      body {
+        background: #3f4441;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      .navbar {
+        display: flex;
+          align-items: flex-end;
+          justify-content: flex-end;
+        height: 30vh;
+        width: 100vw;
+        text-align: right;
+        background: #ffdecf;
+      }
+
+      .navbar h1 {
+        margin: 0 auto 0 110px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 30px;
+        color: #222831;
+      }
+
+      .navbar ul {
+        width: 100px;
+        font-weight: 800;
+        list-style: none;
+      }
+
+      .navbar a {
+        padding: 0px 10px 0 0;
+        text-decoration: none;
+        font-size: 20px;
+        color: #222831;
+      }
+
+      .grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+
+      .column {
+        flex: 20%;
+        max-width: 25%;
+        padding: 5px 8px;
+      }
+
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+
+      @media (max-width: 1200px) {
+        .column {
+          flex: 40%;
+          flex-wrap: wrap;
+          max-width: 50%;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .column {
+          flex: 50%;
+          max-width: 100%;
+        }
+      }
+  </style>
+  <body>
+    <nav>
+      <div class="navbar">
+        <h1>helèna blair</h1>
+        <ul>
+          <li><a href="#">Photos</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="grid-container">
+        <div class="column">
+          <img src="1.jpg" alt="" />
+          <img src="2.jpg" alt="" />
+        </div>
+
+        <div class="column">
+          <img src="3.jpg" alt="" />
+          <img src="4.jpg" alt="" />
+          <img src="383514f50561af3ff67011.jpg" alt="" />
+        </div>
+
+        <div class="column">
+          <img src="01adcd2cc4b86ee637a98.jpg" alt="" />
+          <img src="4e9a381f318b9bd5c29a6.jpg" alt="" />
+          <img src="46579dd58a41201f79509.jpg" alt="" />
+        </div>
+
+        <div class="column">
+          <img src="9a5b9cdd95493f1766585.jpg" alt="" />
+          <img src="906df7ecfe7854260d697.jpg" alt="" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
